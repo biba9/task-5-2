@@ -12,14 +12,14 @@
     />
   </head>
   <body>
-    <div class=".bg-secondary-subtle p-5">
+    <div class=" p-5">
       <h2 class="text-center text-uppercase my-3 ">Unit Converter</h2>
-      <p class="text-center my-3">
+      <p class="text-center mb-5">
         Convert units between meters, kilometers, and centimeters.
       </p>
-      <div class="container">
+      <div class="container bg-secondary-subtle w-50">
         <form class="row g-3">
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="col-lg-12 ">
             <input
               type="number"
               class="form-control"
@@ -28,7 +28,7 @@
             />
           </div>
 
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="col-lg-12 ">
             <select
               id="fromUnit"
               class="form-select"
@@ -40,7 +40,7 @@
               <option value="centimeter">centimeter</option>
             </select>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12" id="Selection2">
+          <div class="col-lg-12 " id="Selection2">
             <select id="toUnit" class="form-select">
               <option value="meter">meter</option>
               <option value="kilometer">kilometer</option>
@@ -49,23 +49,22 @@
           </div>
    
          
-          <div class="col-12">
-            <label for="convertedOutput" class="form-label"
-              >Converted Value</label
-            >
+          <div class="col-lg-12 ">
+          
             <input
               type="text"
               class="form-control"
               id="convertedOutput"
               readonly
+              placeholder="Converted Value"
             />
           </div>
 
-          <div class="col-12 text-center">
+          <div class="col-lg-12  d-flex justify-content-center">
             <input
               type="button"
-            
-              class="btn btn-primary my-4 convertUnit"
+            id="inputValue"
+              class="btn btn-primary mb-3 bg-danger convertUnit w-25"
               value="Convert"/>
           </div>
       
